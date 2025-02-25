@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumbh Mela Scraper Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Kumbh Mela Scraper Dashboard</h1>
+        
+        <div class="status-section">
+            <h2>📊 Scraping Status</h2>
+            <p><strong>Historical Data Collection:</strong> <span id="historical-status">Fetching...</span></p>
+            <p><strong>Live Data Collection:</strong> <span id="live-status">Fetching...</span></p>
+        </div>
+        
+        <div class="logs-section">
+            <h2>📜 Logs</h2>
+            <div id="logs" class="logs-container">Loading logs...</div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .status-section, .logs-section {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background: #fff;
+            border-radius: 5px;
+        }
+        .logs-container {
+            height: 200px;
+            overflow-y: auto;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+    </style>
+</body>
+</html>
